@@ -21,7 +21,14 @@ import subprocess
 import sys
 import time
 
-from pynput import mouse, keyboard
+try:
+    from pynput import mouse, keyboard
+except ImportError:
+    print("[!] La bibliotheque 'pynput' n'est pas installee.")
+    print("    Ouvrez un terminal dans ce dossier et lancez :")
+    print("        pip install -r requirements.txt")
+    input("\nAppuyez sur Entree pour fermer...")
+    sys.exit(1)
 
 CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
 
@@ -173,4 +180,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        pass
+    except Exception as e:
+        print(f"\n[!] Erreur fatale : {e}")
+    input("\nAppuyez sur Entree pour fermer...")

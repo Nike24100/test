@@ -43,6 +43,12 @@ Touches valides pour `hotkey` : `ctrl`, `alt`, `shift`, `cmd`, `enter`, `esc`, `
 python zones.py
 ```
 
+Ou plus simplement : **double-cliquez sur `lancer.bat`** — il installe `pynput` au premier lancement si nécessaire, puis démarre le script et garde la fenêtre ouverte.
+
+### La fenêtre se ferme immédiatement ?
+
+Si vous lancez `zones.py` par double-clic et que la fenêtre se referme aussitôt, c'est qu'une erreur s'est produite (le plus souvent `pynput` non installé). Le script affiche maintenant le message d'erreur et attend que vous appuyiez sur Entrée. Utilisez `lancer.bat` ou lancez depuis un terminal pour voir le message.
+
 - Chaque clic dans une zone déclenche l'action associée.
 - **Clic du milieu** de la souris ou **Ctrl+C** dans le terminal pour arrêter.
 
