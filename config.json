@@ -1,0 +1,33 @@
+{
+  "zones": [
+    {
+      "name": "coin haut-gauche",
+      "rect": [0, 0, 200, 200],
+      "action": { "type": "open", "target": "notepad.exe" }
+    },
+    {
+      "name": "coin haut-droit",
+      "rect": [1720, 0, 1920, 200],
+      "action": [
+        { "type": "hotkey", "keys": ["ctrl", "c"] },
+        { "type": "wait", "seconds": 0.3 },
+        { "type": "type", "text": "Copié !", "delay": 0.03 }
+      ]
+    },
+    {
+      "name": "coin bas-gauche",
+      "rect": [0, 880, 200, 1080],
+      "action": { "type": "hotkey", "keys": ["ctrl", "s"] }
+    },
+    {
+      "name": "coin bas-droit",
+      "rect": [1720, 880, 1920, 1080],
+      "action": {
+        "type": "click",
+        "position": [960, 540],
+        "delay": 0.2,
+        "count": 2
+      }
+    }
+  ]
+}
