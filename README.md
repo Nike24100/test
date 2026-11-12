@@ -49,5 +49,5 @@ python zones.py
 ## Conseils
 
 - Évitez de placer des zones sur des boutons que vous utilisez normalement : tous les clics dans la zone sont interceptés.
-- Ajustez les `rect` à votre résolution d'écran (les exemples supposent 1920×1080).
+- Ajustez les `rect` à votre résolution d'écran (les exemples supposent 2560×1440).
 - Pour un lancement rapide, créez un raccourci Windows vers `pythonw zones.py` (sans fenêtre terminal).
