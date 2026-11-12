@@ -25,6 +25,8 @@ Déplacez la souris aux coins de chaque zone et notez les coordonnées affichée
 
 Ouvrez `config.json`. Chaque zone a un `name`, un `rect` et une `action`.
 
+Le paramètre facultatif `"verbose"` (défaut : `true`) contrôle l'affichage des clics hors zones : mettez `"verbose": false` pour un log silencieux qui ne montre que les actions déclenchées.
+
 Types d'actions disponibles (une action peut être un objet **ou une liste** d'objets pour enchaîner plusieurs étapes) :
 
 | Type | Description | Exemple |

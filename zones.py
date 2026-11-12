@@ -107,7 +107,8 @@ def on_click(x, y, button, pressed, config):
 
     zone = find_zone(x, y, config["zones"])
     if zone is None:
-        print(f"[-] Clic ({x}, {y}) hors de toutes les zones.")
+        if config.get("verbose", True):
+            print(f"[-] Clic ({x}, {y}) hors de toutes les zones.")
         return True
 
     print(f"[+] Clic ({x}, {y}) dans la zone '{zone['name']}' -> action.")
